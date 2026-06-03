@@ -33,9 +33,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return redirect()->route('inventaris.index');
     })->name('dashboard');
-    Route::get('/tes-emu', function () {
-        return 'TES BERHASIL';
-    });
 
     Route::middleware('admin')->group(function () {
 
